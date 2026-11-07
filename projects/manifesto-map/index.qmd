@@ -1,0 +1,20 @@
+---
+title: "How Close Are the World's Parties?"
+description: "Text and policy-code similarity for 226 parties across the world, using Manifesto Project data, shown as interactive maps and networks."
+date: 2026-10-27
+categories: [Comparative politics, Text analysis, Interactive, R]
+resources:
+  - report.html
+---
+
+## Question
+Do parties cluster by country or by ideology? I compared 226 parties that won at least 5% of the vote, in two ways: by their manifesto wording and by the Manifesto Project's hand-coded policy categories.
+
+## Key findings
+- **Wording clusters by country.** Parties in the same country use similar words, even across party families.
+- **Policy clusters by party family.** Greens and the left group together, and so does the radical right. Germany's AfD is closest to Switzerland's SVP, the Netherlands' FvD and Spain's VOX.
+- After correcting for document length, the two measures agree at a correlation of 0.46.
+
+[Open the full interactive report](report.html){.btn .btn-primary target="_blank"}
+
+<iframe src="report.html" width="100%" height="850" style="border:1px solid #ddd; border-radius:8px;"></iframe>

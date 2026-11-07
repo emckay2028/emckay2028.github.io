@@ -1,0 +1,20 @@
+---
+title: "Cabinet Churn and Democratic Erosion"
+description: "A Quarto dashboard merging WhoGov cabinet data with V-Dem and DEED: turnover by regime type, a Sun–Abraham event study, and a country explorer."
+date: 2026-10-23
+categories: [Democracy, Panel data, Dashboard, R]
+resources:
+  - report.html
+---
+
+## Question
+Do autocrats reshuffle their cabinets to stop rivals building power bases ("coup-proofing")? And do purges come before or after spikes in executive authoritarian events?
+
+## Key findings
+- **No coup-proofing signal yet:** autocracies replace 30.4% of ministers a year and democracies 35.3%, probably because elections replace whole cabinets.
+- **Turnover doesn't clearly move around spikes:** the post-spike effect is 0.028 (SE 0.038).
+- **Polyarchy was already falling before spikes,** so spikes look like part of an existing slide rather than its start.
+
+[Open the full dashboard](report.html){.btn .btn-primary target="_blank"}
+
+<iframe src="report.html" width="100%" height="900" style="border:1px solid #ddd; border-radius:8px;"></iframe>

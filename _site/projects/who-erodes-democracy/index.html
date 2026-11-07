@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2026-04-15">
-<meta name="description" content="Actor-level panel models of authoritarian behaviour and V-Dem polyarchy">
+<meta name="description" content="Which institutions’ authoritarian actions predict democratic decline? Two-part fixed-effects panel models on 23,421 DEED events and V-Dem polyarchy.">
 
 <title>Who Erodes Democracy? – Emily McKay</title>
 <style>
@@ -129,7 +129,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#question" id="toc-question" class="nav-link active" data-scroll-target="#question">Question</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
   <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
-  <li><a href="#key-finding" id="toc-key-finding" class="nav-link" data-scroll-target="#key-finding">Key finding</a></li>
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key findings</a></li>
+  <li><a href="#limitations-and-next-steps" id="toc-limitations-and-next-steps" class="nav-link" data-scroll-target="#limitations-and-next-steps">Limitations and next steps</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
   </ul>
 </nav>
     </div>
@@ -139,16 +141,17 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Who Erodes Democracy?</h1>
+<p class="subtitle lead">Actor-level evidence from a two-part model of authoritarian behaviour</p>
   <div class="quarto-categories">
-    <div class="quarto-category">panel data</div>
-    <div class="quarto-category">democracy</div>
+    <div class="quarto-category">Democracy</div>
+    <div class="quarto-category">Panel data</div>
     <div class="quarto-category">R</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Actor-level panel models of authoritarian behaviour and V-Dem polyarchy
+    Which institutions’ authoritarian actions predict democratic decline? Two-part fixed-effects panel models on 23,421 DEED events and V-Dem polyarchy.
   </div>
 </div>
 
@@ -171,17 +174,95 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Won the “Justice, Equality, &amp; Power” session at American University’s 18th Annual Undergraduate Research Symposium (April 2026).</p>
+</div>
+</div>
+</div>
 <section id="question" class="level2">
 <h2 class="anchored" data-anchor-id="question">Question</h2>
+<p>Research on democratic backsliding usually treats it as a country-level process driven by economic crisis, polarisation or populist leaders. I asked a narrower question: <strong>whose actions predict democratic decline?</strong> When the military, courts, legislature and ruling party all behave in authoritarian ways, is the executive doing the damage, or do other institutions matter independently?</p>
 </section>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
+<ul>
+<li><strong>Democratic Erosion Event Dataset (DEED v7):</strong> 23,421 hand-coded erosion events across 156 countries, 2000–2023, each tagged with the actor responsible.</li>
+<li><strong>V-Dem:</strong> the Electoral Democracy (polyarchy) index, 0–1, as the outcome.</li>
+</ul>
+<p>I turned DEED events into lagged actor-by-country-year counts and merged them with V-Dem.</p>
 </section>
 <section id="method" class="level2">
 <h2 class="anchored" data-anchor-id="method">Method</h2>
+<p>I used a <strong>two-part panel model</strong>, borrowed from the trade and conflict literature, which separates:</p>
+<ul>
+<li>the <strong>extensive margin</strong>: does an actor engage in authoritarian behaviour at all?</li>
+<li>the <strong>intensive margin</strong>: how many actions does it take once involved?</li>
+</ul>
+<p>Models are estimated in R with <code>fixest</code>, with country and year fixed effects, lagged predictors (t−1 → t) and country-clustered standard errors. I estimate them for 54 individual actors and for seven grouped institutional categories. Robustness checks include the Liberal Democracy Index, logit-transformed polyarchy, alternative lags and dropping the highest-event countries.</p>
 </section>
-<section id="key-finding" class="level2">
-<h2 class="anchored" data-anchor-id="key-finding">Key finding</h2>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key findings</h2>
+<!-- CHECK: these coefficients are from the symposium version. Update from the final Passion_Project_Revised.qmd if they changed. -->
+<table class="caption-top table">
+<caption>Effect on next-year V-Dem polyarchy. * p&lt;0.1, ** p&lt;0.05, *** p&lt;0.01</caption>
+<thead>
+<tr class="header">
+<th>Institutional category</th>
+<th>Onset (extensive)</th>
+<th>Escalation (intensive)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Military &amp; law enforcement</td>
+<td>−0.022***</td>
+<td>−0.010***</td>
+</tr>
+<tr class="even">
+<td>Executive &amp; government leadership</td>
+<td>−0.020***</td>
+<td>−0.010***</td>
+</tr>
+<tr class="odd">
+<td>Judiciary</td>
+<td>−0.012**</td>
+<td>n.s.</td>
+</tr>
+<tr class="even">
+<td>Legislative bodies</td>
+<td>n.s.</td>
+<td>−0.007**</td>
+</tr>
+<tr class="odd">
+<td>Civil society &amp; advocacy</td>
+<td>n.s.</td>
+<td>+0.008*</td>
+</tr>
+<tr class="even">
+<td>Foreign &amp; international actors</td>
+<td>+0.020*</td>
+<td>+0.033***</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li><strong>Backsliding is multi-institutional.</strong> The military, police, judiciary and ruling party each predict decline independently of the head of state.</li>
+<li><strong>Onset matters more than escalation.</strong> The first authoritarian action by a new institution is a stronger warning signal than further actions by one already involved.</li>
+<li><strong>Resilience actors exist.</strong> Sustained civil-society engagement and international attention are associated with higher democracy scores.</li>
+</ol>
+</section>
+<section id="limitations-and-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-and-next-steps">Limitations and next steps</h2>
+<p>The lagged fixed-effects design is strong predictive evidence, not causal identification, and countries with freer media may generate more coded events. My next project tests <strong>spatial contagion</strong>: whether neighbouring countries’ authoritarian events predict later decline, using a contiguity-weighted spatial lag.</p>
+</section>
+<section id="code" class="level2">
+<h2 class="anchored" data-anchor-id="code">Code</h2>
+<p><a href="https://github.com/emckay2028/Coding">View the code on GitHub</a></p>
 
 
 </section>

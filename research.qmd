@@ -1,6 +1,7 @@
 ---
 title: "Research"
 toc: false
+page-layout: full
 ---
 
 ## Who Erodes Democracy? Actor-Level Evidence from a Two-Part Model of Authoritarian Behavior
@@ -13,12 +14,11 @@ toc: false
 
 Democratic backsliding is usually pinned on strongmen. This paper asks **which institutions' authoritarian actions actually predict democratic decline**. I merged 23,421 hand-coded events from the Democratic Erosion Event Dataset with V-Dem democracy scores. Then I used two-part fixed-effects panel models to separate the *onset* of authoritarian behaviour by an institution from its *escalation*.
 
-**Main findings:** the military, police, judiciary and ruling party each predict decline independently of the head of state. The first authoritarian action by a new institution is a stronger warning sign than further actions by one already involved. Sustained civil-society and international engagement are associated with resilience.
-
-[Read the paper (PDF)](files/Who-Erodes-Democracy-paper.pdf){.btn .btn-primary target="_blank"}
+[Open paper full screen](files/Who-Erodes-Democracy-paper.html){.btn .btn-primary target="_blank"}
 [Symposium slides (PDF)](files/Who-Erodes-Democracy-slides.pdf){.btn .btn-outline-primary target="_blank"}
-[Project page](projects/who-erodes-democracy/index.qmd){.btn .btn-outline-primary}
 [Code](https://github.com/emckay2028/Coding){.btn .btn-outline-secondary target="_blank"}
+
+<iframe src="files/Who-Erodes-Democracy-paper.html" title="Who Erodes Democracy? Full paper" width="100%" height="900" style="border:1px solid #ddd; border-radius:8px; margin-top:1rem;"></iframe>
 
 ### Work in progress
 

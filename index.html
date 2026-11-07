@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -67,12 +69,73 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-featured .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-featured'] = new List('listing-featured', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Emily McKay">
+<meta property="og:description" content="I turn messy political and policy data into clear, reproducible evidence.">
+<meta property="og:site_name" content="Emily McKay">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -98,13 +161,35 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./writing.html"> 
+<span class="menu-text">Writing</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./files/Emily-McKay-CV.pdf" target="_blank"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/emily-mckay-a22034288"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/emckay2028"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:e.k.mckay@lse.ac.uk"> <i class="bi bi-envelope" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -119,15 +204,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Emily McKay</h1>
+<p class="subtitle lead">I turn messy political and policy data into clear, reproducible evidence.</p>
 </div>
 
 
@@ -144,10 +228,76 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<p>I’m a Data Science for Political Science student at American University, spending 2026–27 on the General Course at the London School of Economics. I build cross-national panel datasets, model them in R and turn the results into charts, dashboards and writing that non-specialists can use.</p>
+<p>My work focuses on <strong>democratic erosion</strong>, <strong>comparative party politics</strong> and <strong>policy evaluation</strong>. My actor-level study of democratic backsliding won its session at American University’s 2026 Undergraduate Research Symposium.</p>
+<p><a href="./projects.html" class="btn btn-primary">View all projects</a> <a href="files/Emily-McKay-CV.pdf" class="btn btn-outline-primary" target="_blank">Download my CV</a></p>
+<section id="featured-work" class="level2">
+<h2 class="anchored" data-anchor-id="featured-work">Featured work</h2>
+<div id="listing-featured" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="RGVtb2NyYWN5JTJDUGFuZWwlMjBkYXRhJTJDRGFzaGJvYXJkJTJDUg==" data-listing-date-sort="1792710000000" data-listing-file-modified-sort="1794088357585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="90">
+<a href="./projects/cabinet-churn/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Cabinet Churn and Democratic Erosion
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGVtb2NyYWN5'); return false;">Democracy</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGFuZWwlMjBkYXRh'); return false;">Panel data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGFzaGJvYXJk'); return false;">Dashboard</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>A Quarto dashboard merging WhoGov cabinet data with V-Dem and DEED: turnover by regime type, a Sun–Abraham event study, and a country explorer.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Q29tcGFyYXRpdmUlMjBwb2xpdGljcyUyQ1RleHQlMjBhbmFseXNpcyUyQ0ludGVyYWN0aXZlJTJDUg==" data-listing-date-sort="1793059200000" data-listing-file-modified-sort="1794088231075" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="110">
+<a href="./projects/manifesto-map/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+How Close Are the World’s Parties?
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tcGFyYXRpdmUlMjBwb2xpdGljcw=='); return false;">Comparative politics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VGV4dCUyMGFuYWx5c2lz'); return false;">Text analysis</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50ZXJhY3RpdmU='); return false;">Interactive</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Text and policy-code similarity for 226 parties across the world, using Manifesto Project data, shown as interactive maps and networks.</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="what-i-work-with" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-work-with">What I work with</h2>
+<p><strong>Methods:</strong> fixed-effects panel models, two-part models, event studies, regression and diagnostics, text similarity</p>
+<p><strong>Tools:</strong> R (tidyverse, fixest, ggplot2, gt, tidymodels), Quarto, Git/GitHub, interactive Plotly and Observable dashboards</p>
+<p><strong>Data:</strong> V-Dem, DEED, WhoGov, Manifesto Project, DOJ FARA, General Social Survey, EIA</p>
 
 
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -222,7 +372,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/emckay2028\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/emckay2028\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -550,6 +700,19 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Emily McKay · Built with R and Quarto</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

@@ -1,22 +1,42 @@
 project:
   type: website
+  resources:
+    - files/
 
 website:
   title: "Emily McKay"
+  site-url: https://emckay2028.github.io
+  description: "Quantitative political and policy data analysis in R"
+  open-graph: true
   navbar:
     left:
       - href: index.qmd
         text: Home
       - href: projects.qmd
         text: Projects
+      - href: research.qmd
+        text: Research
+      - href: writing.qmd
+        text: Writing
       - href: about.qmd
         text: About
     right:
+      - text: CV
+        href: files/Emily-McKay-CV.pdf
+        target: _blank
+      - icon: linkedin
+        href: https://www.linkedin.com/in/emily-mckay-a22034288
       - icon: github
         href: https://github.com/emckay2028
+      - icon: envelope
+        href: mailto:e.k.mckay@lse.ac.uk
+  page-footer:
+    center: "© 2026 Emily McKay · Built with R and Quarto"
 
 format:
   html:
-    theme: cosmo
+    theme:
+      - cosmo
+      - brand
     css: styles.css
     toc: true

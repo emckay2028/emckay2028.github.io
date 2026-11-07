@@ -1,0 +1,16 @@
+---
+title: "Policy Writing"
+toc: false
+---
+
+## Facial Recognition in Law Enforcement
+
+*Policy memo to the House Task Force on Artificial Intelligence · March 2026*
+
+Police use of facial recognition is growing with almost no federal regulation. This memo reviews how the technology works and how law enforcement uses it. It covers the evidence on accuracy and demographic error gaps, and the lack of disclosure to defendants. It then assesses H.R. 4695 and recommends amendments on algorithmic bias, developer accountability and federal oversight. The memo draws on 22 sources, including NIST and GAO reports.
+
+::: {.callout-note appearance="simple"}
+Written for a university public policy course. The assignment was to write on behalf of an advocacy organisation of my own design, so **The Privacy Project is fictional** and is not a real organisation or employer.
+:::
+
+[Read the memo (PDF)](files/Facial-Recognition-Policy-Memo.pdf){.btn .btn-primary target="_blank"}

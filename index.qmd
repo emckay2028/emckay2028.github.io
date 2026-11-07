@@ -1,7 +1,34 @@
 ---
 title: "Emily McKay"
+subtitle: "I turn messy political and policy data into clear, reproducible evidence."
+toc: false
+listing:
+  id: featured
+  contents:
+    - projects/who-erodes-democracy/index.qmd
+    - projects/manifesto-map/index.qmd
+    - projects/cabinet-churn/index.qmd
+  type: grid
+  grid-columns: 3
+  fields: [image, title, description, categories]
 ---
 
-This is a Quarto website.
+I'm a Data Science for Political Science student at American University, spending 2026–27 on the General Course at the London School of Economics. I build cross-national panel datasets, model them in R and turn the results into charts, dashboards and writing that non-specialists can use.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+My work focuses on **democratic erosion**, **comparative party politics** and **policy evaluation**. My actor-level study of democratic backsliding won its session at American University's 2026 Undergraduate Research Symposium.
+
+[View all projects](projects.qmd){.btn .btn-primary}
+[Download my CV](files/Emily-McKay-CV.pdf){.btn .btn-outline-primary target="_blank"}
+
+## Featured work
+
+::: {#featured}
+:::
+
+## What I work with
+
+**Methods:** fixed-effects panel models, two-part models, event studies, regression and diagnostics, text similarity
+
+**Tools:** R (tidyverse, fixest, ggplot2, gt, tidymodels), Quarto, Git/GitHub, interactive Plotly and Observable dashboards
+
+**Data:** V-Dem, DEED, WhoGov, Manifesto Project, DOJ FARA, General Social Survey, EIA

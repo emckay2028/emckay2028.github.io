@@ -1,0 +1,25 @@
+---
+title: "Research"
+toc: false
+---
+
+## Who Erodes Democracy? Actor-Level Evidence from a Two-Part Model of Authoritarian Behavior
+
+**Emily McKay** · Faculty mentor: Prof. Maria Popova · American University, 2026
+
+::: {.callout-tip appearance="simple"}
+**Session winner, "Justice, Equality, & Power,"** 18th Annual Undergraduate Research Symposium, American University, April 2026.
+:::
+
+Democratic backsliding is usually pinned on strongmen. This paper asks **which institutions' authoritarian actions actually predict democratic decline**. I merged 23,421 hand-coded events from the Democratic Erosion Event Dataset with V-Dem democracy scores. Then I used two-part fixed-effects panel models to separate the *onset* of authoritarian behaviour by an institution from its *escalation*.
+
+**Main findings:** the military, police, judiciary and ruling party each predict decline independently of the head of state. The first authoritarian action by a new institution is a stronger warning sign than further actions by one already involved. Sustained civil-society and international engagement are associated with resilience.
+
+[Read the paper (PDF)](files/Who-Erodes-Democracy-paper.pdf){.btn .btn-primary target="_blank"}
+[Symposium slides (PDF)](files/Who-Erodes-Democracy-slides.pdf){.btn .btn-outline-primary target="_blank"}
+[Project page](projects/who-erodes-democracy/index.qmd){.btn .btn-outline-primary}
+[Code](https://github.com/emckay2028/Coding){.btn .btn-outline-secondary target="_blank"}
+
+### Work in progress
+
+**Spatial contagion of democratic backsliding.** Do authoritarian events in neighbouring countries predict later democratic decline at home? This extension uses a contiguity-weighted spatial lag of DEED events and draws on theories of demonstration effects.

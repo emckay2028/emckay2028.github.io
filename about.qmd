@@ -1,5 +1,52 @@
 ---
-title: "About"
+title: "About Me"
+# image: images/headshot.jpg   # remove the # at the start once you've added your photo
+about:
+  template: trestles
+  links:
+    - icon: file-earmark-pdf
+      text: CV
+      href: files/Emily-McKay-CV.pdf
+      target: _blank
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/emily-mckay-a22034288
+    - icon: github
+      text: GitHub
+      href: https://github.com/emckay2028
+    - icon: envelope
+      text: Email
+      href: mailto:e.k.mckay@lse.ac.uk
 ---
 
-About this site
+I'm a Data Science for Political Science undergraduate at American University, spending 2026–27 on the General Course at the London School of Economics. I'm interested in how institutions erode or protect democracy, and in using data to make that kind of question answerable.
+
+My favourite projects start with a question that's hard to measure. I build the dataset from scratch, test whether the result holds up, and then explain it clearly. My research on which institutions drive democratic backsliding won its session at American University's 2026 Undergraduate Research Symposium.
+
+I'm looking for **policy research, data analysis and research-assistant roles** where cross-national data and careful methods inform real decisions.
+
+## Education
+
+**London School of Economics and Political Science**: General Course | Sep 2026 – Jun 2027
+
+Public Policy Analysis · Machine Learning for Social Scientists · Political Geography · Politics and Institutions in Europe · Social Anthropology
+
+**American University, Washington, DC**: BS Data Science for Political Science | 2024 – 2028 (expected)
+
+Data Science for Political Science · Intermediate Statistics · Linear Algebra · Research for Political Science · Public Policy Analysis
+
+## Experience
+
+**Supplemental Instruction Leader, Intermediate Statistics**, American University | Aug 2025 – May 2026
+
+I led weekly peer study sessions and wrote practice tests on t-tests, ANOVA and log transformations.
+
+## Skills
+
+- **Methods:** fixed-effects panel and two-part models, event studies, OLS and interaction models, t-tests, ANOVA, text similarity
+- **Software:** R (tidyverse, fixest, ggplot2, gt, tidymodels), Quarto, RStudio, Git/GitHub; Python (pandas, working knowledge)
+- **Data:** V-Dem, DEED, WhoGov, Manifesto Project, DOJ FARA, General Social Survey
+
+## Outside of work
+
+I'm from Canada and Texas. When I'm not coding, I'm usually travelling, reading horror novels, journaling or cooking for friends.

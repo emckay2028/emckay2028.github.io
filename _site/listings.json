@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/index.html",
+    "items": [
+      "/projects/cabinet-churn/index.html",
+      "/projects/manifesto-map/index.html"
+    ]
+  },
+  {
     "listing": "/projects.html",
     "items": [
       "/projects/manifesto-map/index.html",

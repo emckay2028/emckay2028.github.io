@@ -15,8 +15,6 @@ about:
       text: GitHub
       href: https://github.com/emckay2028
     - icon: envelope
-      text: Email
-      href: mailto:e.k.mckay@lse.ac.uk
 ---
 
 I'm a Data Science for Political Science undergraduate at American University, spending 2026–27 on the General Course at the London School of Economics. I'm interested in how institutions erode or protect democracy, and in using data to make that kind of question answerable.

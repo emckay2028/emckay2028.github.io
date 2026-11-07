@@ -1,38 +1,38 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "writing.html",
+    "href": "writing.html",
+    "title": "Policy Writing",
     "section": "",
-    "text": "About this site"
+    "text": "Policy memo to the House Task Force on Artificial Intelligence · March 2026\nPolice use of facial recognition is growing with almost no federal regulation. This memo reviews how the technology works and how law enforcement uses it. It covers the evidence on accuracy and demographic error gaps, and the lack of disclosure to defendants. It then assesses H.R. 4695 and recommends amendments on algorithmic bias, developer accountability and federal oversight. The memo draws on 22 sources, including NIST and GAO reports.\n\n\n\n\n\n\nWritten for a university public policy course. The assignment was to write on behalf of an advocacy organisation of my own design, so The Privacy Project is fictional and is not a real organisation or employer.\n\n\n\nRead the memo (PDF)"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "writing.html#facial-recognition-in-law-enforcement",
+    "href": "writing.html#facial-recognition-in-law-enforcement",
+    "title": "Policy Writing",
     "section": "",
-    "text": "How Close Are the World’s Parties?\n\n\n\nComparative politics\n\nText analysis\n\nInteractive\n\nR\n\n\n\nText and policy-code similarity for 226 parties across the world, using Manifesto Project data, shown as interactive maps and networks.\n\n\n\n\n\n\nOct 27, 2026\n\n\n\n\n\n\n\n\n\n\n\nCabinet Churn and Democratic Erosion\n\n\n\nDemocracy\n\nPanel data\n\nDashboard\n\nR\n\n\n\nA Quarto dashboard merging WhoGov cabinet data with V-Dem and DEED: turnover by regime type, a Sun–Abraham event study, and a country explorer.\n\n\n\n\n\n\nOct 23, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Policy memo to the House Task Force on Artificial Intelligence · March 2026\nPolice use of facial recognition is growing with almost no federal regulation. This memo reviews how the technology works and how law enforcement uses it. It covers the evidence on accuracy and demographic error gaps, and the lack of disclosure to defendants. It then assesses H.R. 4695 and recommends amendments on algorithmic bias, developer accountability and federal oversight. The memo draws on 22 sources, including NIST and GAO reports.\n\n\n\n\n\n\nWritten for a university public policy course. The assignment was to write on behalf of an advocacy organisation of my own design, so The Privacy Project is fictional and is not a real organisation or employer.\n\n\n\nRead the memo (PDF)"
   },
   {
-    "objectID": "projects/manifesto-map/index.html",
-    "href": "projects/manifesto-map/index.html",
-    "title": "How Close Are the World’s Parties?",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Emily McKay",
     "section": "",
-    "text": "Do parties cluster by country or by ideology? I compared 226 parties that won at least 5% of the vote, in two ways: by their manifesto wording and by the Manifesto Project’s hand-coded policy categories."
+    "text": "I’m a Data Science for Political Science student at American University, spending 2026–27 on the General Course at the London School of Economics. I build cross-national panel datasets, model them in R and turn the results into charts, dashboards and writing that non-specialists can use.\nMy work focuses on democratic erosion, comparative party politics and policy evaluation. My actor-level study of democratic backsliding won its session at American University’s 2026 Undergraduate Research Symposium.\nView all projects Download my CV"
   },
   {
-    "objectID": "projects/manifesto-map/index.html#question",
-    "href": "projects/manifesto-map/index.html#question",
-    "title": "How Close Are the World’s Parties?",
-    "section": "",
-    "text": "Do parties cluster by country or by ideology? I compared 226 parties that won at least 5% of the vote, in two ways: by their manifesto wording and by the Manifesto Project’s hand-coded policy categories."
+    "objectID": "index.html#featured-work",
+    "href": "index.html#featured-work",
+    "title": "Emily McKay",
+    "section": "Featured work",
+    "text": "Featured work\n\n\n\n\n\n\n\n\nCabinet Churn and Democratic Erosion\n\n\n\nDemocracy\n\nPanel data\n\nDashboard\n\nR\n\n\n\nA Quarto dashboard merging WhoGov cabinet data with V-Dem and DEED: turnover by regime type, a Sun–Abraham event study, and a country explorer.\n\n\n\n\n\n\n\n\n\n\nHow Close Are the World’s Parties?\n\n\n\nComparative politics\n\nText analysis\n\nInteractive\n\nR\n\n\n\nText and policy-code similarity for 226 parties across the world, using Manifesto Project data, shown as interactive maps and networks.\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/manifesto-map/index.html#key-findings",
-    "href": "projects/manifesto-map/index.html#key-findings",
-    "title": "How Close Are the World’s Parties?",
-    "section": "Key findings",
-    "text": "Key findings\n\nWording clusters by country. Parties in the same country use similar words, even across party families.\nPolicy clusters by party family. Greens and the left group together, and so does the radical right. Germany’s AfD is closest to Switzerland’s SVP, the Netherlands’ FvD and Spain’s VOX.\nAfter correcting for document length, the two measures agree at a correlation of 0.46.\n\nOpen the full interactive report"
+    "objectID": "index.html#what-i-work-with",
+    "href": "index.html#what-i-work-with",
+    "title": "Emily McKay",
+    "section": "What I work with",
+    "text": "What I work with\nMethods: fixed-effects panel models, two-part models, event studies, regression and diagnostics, text similarity\nTools: R (tidyverse, fixest, ggplot2, gt, tidymodels), Quarto, Git/GitHub, interactive Plotly and Observable dashboards\nData: V-Dem, DEED, WhoGov, Manifesto Project, DOJ FARA, General Social Survey, EIA"
   },
   {
     "objectID": "projects/cabinet-churn/index.html",
@@ -56,10 +56,80 @@
     "text": "Key findings\n\nNo coup-proofing signal yet: autocracies replace 30.4% of ministers a year and democracies 35.3%, probably because elections replace whole cabinets.\nTurnover doesn’t clearly move around spikes: the post-spike effect is 0.028 (SE 0.038).\nPolyarchy was already falling before spikes, so spikes look like part of an existing slide rather than its start.\n\nOpen the full dashboard"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Emily McKay",
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Emily McKay · Faculty mentor: Prof. Maria Popova · American University, 2026\n\n\n\n\n\n\nSession winner, “Justice, Equality, & Power,” 18th Annual Undergraduate Research Symposium, American University, April 2026.\n\n\n\nDemocratic backsliding is usually pinned on strongmen. This paper asks which institutions’ authoritarian actions actually predict democratic decline. I merged 23,421 hand-coded events from the Democratic Erosion Event Dataset with V-Dem democracy scores. Then I used two-part fixed-effects panel models to separate the onset of authoritarian behaviour by an institution from its escalation.\nMain findings: the military, police, judiciary and ruling party each predict decline independently of the head of state. The first authoritarian action by a new institution is a stronger warning sign than further actions by one already involved. Sustained civil-society and international engagement are associated with resilience.\nRead the paper (PDF) Symposium slides (PDF) Project page Code\n\n\nSpatial contagion of democratic backsliding. Do authoritarian events in neighbouring countries predict later democratic decline at home? This extension uses a contiguity-weighted spatial lag of DEED events and draws on theories of demonstration effects."
+  },
+  {
+    "objectID": "research.html#who-erodes-democracy-actor-level-evidence-from-a-two-part-model-of-authoritarian-behavior",
+    "href": "research.html#who-erodes-democracy-actor-level-evidence-from-a-two-part-model-of-authoritarian-behavior",
+    "title": "Research",
+    "section": "",
+    "text": "Emily McKay · Faculty mentor: Prof. Maria Popova · American University, 2026\n\n\n\n\n\n\nSession winner, “Justice, Equality, & Power,” 18th Annual Undergraduate Research Symposium, American University, April 2026.\n\n\n\nDemocratic backsliding is usually pinned on strongmen. This paper asks which institutions’ authoritarian actions actually predict democratic decline. I merged 23,421 hand-coded events from the Democratic Erosion Event Dataset with V-Dem democracy scores. Then I used two-part fixed-effects panel models to separate the onset of authoritarian behaviour by an institution from its escalation.\nMain findings: the military, police, judiciary and ruling party each predict decline independently of the head of state. The first authoritarian action by a new institution is a stronger warning sign than further actions by one already involved. Sustained civil-society and international engagement are associated with resilience.\nRead the paper (PDF) Symposium slides (PDF) Project page Code\n\n\nSpatial contagion of democratic backsliding. Do authoritarian events in neighbouring countries predict later democratic decline at home? This extension uses a contiguity-weighted spatial lag of DEED events and draws on theories of demonstration effects."
+  },
+  {
+    "objectID": "projects/manifesto-map/index.html",
+    "href": "projects/manifesto-map/index.html",
+    "title": "How Close Are the World’s Parties?",
+    "section": "",
+    "text": "Do parties cluster by country or by ideology? I compared 226 parties that won at least 5% of the vote, in two ways: by their manifesto wording and by the Manifesto Project’s hand-coded policy categories."
+  },
+  {
+    "objectID": "projects/manifesto-map/index.html#question",
+    "href": "projects/manifesto-map/index.html#question",
+    "title": "How Close Are the World’s Parties?",
+    "section": "",
+    "text": "Do parties cluster by country or by ideology? I compared 226 parties that won at least 5% of the vote, in two ways: by their manifesto wording and by the Manifesto Project’s hand-coded policy categories."
+  },
+  {
+    "objectID": "projects/manifesto-map/index.html#key-findings",
+    "href": "projects/manifesto-map/index.html#key-findings",
+    "title": "How Close Are the World’s Parties?",
+    "section": "Key findings",
+    "text": "Key findings\n\nWording clusters by country. Parties in the same country use similar words, even across party families.\nPolicy clusters by party family. Greens and the left group together, and so does the radical right. Germany’s AfD is closest to Switzerland’s SVP, the Netherlands’ FvD and Spain’s VOX.\nAfter correcting for document length, the two measures agree at a correlation of 0.46.\n\nOpen the full interactive report"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "How Close Are the World’s Parties?\n\n\n\nComparative politics\n\nText analysis\n\nInteractive\n\nR\n\n\n\nText and policy-code similarity for 226 parties across the world, using Manifesto Project data, shown as interactive maps and networks.\n\n\n\n\n\n\nOct 27, 2026\n\n\n\n\n\n\n\n\n\n\n\nCabinet Churn and Democratic Erosion\n\n\n\nDemocracy\n\nPanel data\n\nDashboard\n\nR\n\n\n\nA Quarto dashboard merging WhoGov cabinet data with V-Dem and DEED: turnover by regime type, a Sun–Abraham event study, and a country explorer.\n\n\n\n\n\n\nOct 23, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m a Data Science for Political Science undergraduate at American University, spending 2026–27 on the General Course at the London School of Economics. I’m interested in how institutions erode or protect democracy, and in using data to make that kind of question answerable.\nMy favourite projects start with a question that’s hard to measure. I build the dataset from scratch, test whether the result holds up, and then explain it clearly. My research on which institutions drive democratic backsliding won its session at American University’s 2026 Undergraduate Research Symposium.\nI’m looking for policy research, data analysis and research-assistant roles where cross-national data and careful methods inform real decisions."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\nLondon School of Economics and Political Science: General Course | Sep 2026 – Jun 2027\nPublic Policy Analysis · Machine Learning for Social Scientists · Political Geography · Politics and Institutions in Europe · Social Anthropology\nAmerican University, Washington, DC: BS Data Science for Political Science | 2024 – 2028 (expected)\nData Science for Political Science · Intermediate Statistics · Linear Algebra · Research for Political Science · Public Policy Analysis"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\nSupplemental Instruction Leader, Intermediate Statistics, American University | Aug 2025 – May 2026\nI led weekly peer study sessions and wrote practice tests on t-tests, ANOVA and log transformations."
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\nMethods: fixed-effects panel and two-part models, event studies, OLS and interaction models, t-tests, ANOVA, text similarity\nSoftware: R (tidyverse, fixest, ggplot2, gt, tidymodels), Quarto, RStudio, Git/GitHub; Python (pandas, working knowledge)\nData: V-Dem, DEED, WhoGov, Manifesto Project, DOJ FARA, General Social Survey"
+  },
+  {
+    "objectID": "about.html#outside-of-work",
+    "href": "about.html#outside-of-work",
+    "title": "About Me",
+    "section": "Outside of work",
+    "text": "Outside of work\nI’m from Canada and Texas. When I’m not coding, I’m usually travelling, reading horror novels, journaling or cooking for friends."
   }
 ]

@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "How Close Are the World’s Parties?\n\n\n\nComparative politics\n\nText analysis\n\nInteractive\n\nR\n\n\n\nText and policy-code similarity for 226 parties across the world, using Manifesto Project data, shown as interactive maps and networks.\n\n\n\n\n\n\nOct 27, 2026\n\n\n\n\n\n\n\n\n\n\n\nCabinet Churn and Democratic Erosion\n\n\n\nDemocracy\n\nPanel data\n\nDashboard\n\nR\n\n\n\nA Quarto dashboard merging WhoGov cabinet data with V-Dem and DEED: turnover by regime type, a Sun–Abraham event study, and a country explorer.\n\n\n\n\n\n\nOct 23, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/manifesto-map/index.html",
+    "href": "projects/manifesto-map/index.html",
+    "title": "How Close Are the World’s Parties?",
+    "section": "",
+    "text": "Do parties cluster by country or by ideology? I compared 226 parties that won at least 5% of the vote, in two ways: by their manifesto wording and by the Manifesto Project’s hand-coded policy categories."
+  },
+  {
+    "objectID": "projects/manifesto-map/index.html#question",
+    "href": "projects/manifesto-map/index.html#question",
+    "title": "How Close Are the World’s Parties?",
+    "section": "",
+    "text": "Do parties cluster by country or by ideology? I compared 226 parties that won at least 5% of the vote, in two ways: by their manifesto wording and by the Manifesto Project’s hand-coded policy categories."
+  },
+  {
+    "objectID": "projects/manifesto-map/index.html#key-findings",
+    "href": "projects/manifesto-map/index.html#key-findings",
+    "title": "How Close Are the World’s Parties?",
+    "section": "Key findings",
+    "text": "Key findings\n\nWording clusters by country. Parties in the same country use similar words, even across party families.\nPolicy clusters by party family. Greens and the left group together, and so does the radical right. Germany’s AfD is closest to Switzerland’s SVP, the Netherlands’ FvD and Spain’s VOX.\nAfter correcting for document length, the two measures agree at a correlation of 0.46.\n\nOpen the full interactive report"
+  },
+  {
+    "objectID": "projects/cabinet-churn/index.html",
+    "href": "projects/cabinet-churn/index.html",
+    "title": "Cabinet Churn and Democratic Erosion",
+    "section": "",
+    "text": "Do autocrats reshuffle their cabinets to stop rivals building power bases (“coup-proofing”)? And do purges come before or after spikes in executive authoritarian events?"
+  },
+  {
+    "objectID": "projects/cabinet-churn/index.html#question",
+    "href": "projects/cabinet-churn/index.html#question",
+    "title": "Cabinet Churn and Democratic Erosion",
+    "section": "",
+    "text": "Do autocrats reshuffle their cabinets to stop rivals building power bases (“coup-proofing”)? And do purges come before or after spikes in executive authoritarian events?"
+  },
+  {
+    "objectID": "projects/cabinet-churn/index.html#key-findings",
+    "href": "projects/cabinet-churn/index.html#key-findings",
+    "title": "Cabinet Churn and Democratic Erosion",
+    "section": "Key findings",
+    "text": "Key findings\n\nNo coup-proofing signal yet: autocracies replace 30.4% of ministers a year and democracies 35.3%, probably because elections replace whole cabinets.\nTurnover doesn’t clearly move around spikes: the post-spike effect is 0.028 (SE 0.038).\nPolyarchy was already falling before spikes, so spikes look like part of an existing slide rather than its start.\n\nOpen the full dashboard"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Emily McKay",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  }
+]

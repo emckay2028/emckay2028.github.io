@@ -1,0 +1,14 @@
+---
+title: "Who Erodes Democracy?"
+description: "Actor-level panel models of authoritarian behaviour and V-Dem polyarchy"
+date: 2026-04-15
+categories: [panel data, democracy, R]
+---
+
+## Question
+
+## Data
+
+## Method
+
+## Key finding
